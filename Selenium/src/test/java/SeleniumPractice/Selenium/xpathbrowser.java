@@ -19,6 +19,7 @@ public class xpathbrowser
 		WebElement signup=driver.findElement(By.xpath("//a[text()='Create new account']"));
 		signup.click();
 		Thread.sleep(5000);
+		
 		WebElement firstname=driver.findElement(By.xpath("//input[@name='firstname']"));
 		firstname.sendKeys("Rahul");
 		WebElement surname=driver.findElement(By.xpath("//input[@name='lastname']"));
@@ -29,6 +30,7 @@ public class xpathbrowser
 		mail.sendKeys("rahuls101@mol.com");
 		WebElement pass=driver.findElement(By.xpath("//input[@id='password_step_input']"));
 		pass.sendKeys("kdffefefef");
+		
 		WebElement drop=driver.findElement(By.xpath("//select[@id='day']"));
 		Select s=new Select(drop);
 		s.selectByIndex(19);
@@ -38,6 +40,7 @@ public class xpathbrowser
 		WebElement drop2=driver.findElement(By.xpath("//select[@id='year']"));
 		Select s2=new Select(drop2);
 		s2.selectByValue("1999");
+		
 		WebElement sex=driver.findElement(By.xpath("(//input[contains(@id,'u_')])[7]"));
 		sex.click();
 		WebElement submit=driver.findElement(By.xpath("//button[@name='websubmit']"));
